@@ -13,8 +13,7 @@ public class CameraFollow : NetworkBehaviour
 
 	void Start()
 	{
-		target = GameObject.FindGameObjectWithTag("Player").transform;
-		offset = transform.position - target.position;
+		offset = transform.position - FindObjectOfType<NetworkManager>().transform.position;
 	}
 
 	void FixedUpdate()
@@ -26,9 +25,11 @@ public class CameraFollow : NetworkBehaviour
 				if (pm.isLocalPlayer)
 				{
 					localPlayer = pm;
+					target = localPlayer.transform;
 				}
 
 			}
+			return;
 		}
 		Vector3 targetCamPos = target.position + offset;
 		transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);

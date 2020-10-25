@@ -15,10 +15,10 @@ public class EnemyManager : NetworkBehaviour
 
     void Spawn ()
     {
-        if(playerHealth.currentHealth <= 0f)
+        /*if(playerHealth.currentHealth <= 0f)
         {
             return;
-        }
+        }*/
 
         int spawnPointIndex = Random.Range (0, spawnPoints.Length);
 

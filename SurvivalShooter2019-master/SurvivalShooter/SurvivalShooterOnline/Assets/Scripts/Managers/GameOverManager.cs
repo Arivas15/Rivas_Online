@@ -13,23 +13,23 @@ public class GameOverManager : NetworkBehaviour
 
     void Awake()
     {
-        playerHealth = GetComponent<PlayerHealth>();
         anim = GetComponent<Animator>();
     }
     void Update()
     {
-        if (localPlayer.GetComponent<PlayerHealth>() == null)
+        if(localPlayer != null)
         {
-            foreach (PlayerMovement pm in FindObjectsOfType<PlayerMovement>())
+            foreach(PlayerMovement pm in FindObjectsOfType<PlayerMovement>())
             {
-                if (pm.isLocalPlayer)
+                if(pm.isLocalPlayer)
                 {
                     localPlayer = pm;
+                    playerHealth = localPlayer.GetComponent<PlayerHealth>();
                 }
-
             }
         }
-        if (playerHealth.currentHealth <= 0)
+
+        if (playerHealth != null && playerHealth.currentHealth <= 0)
         {
             anim.SetTrigger("GameOver");
 

@@ -352,7 +352,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: bb8816a51ecc13a8eec78899152a1b95
+      Hash: 8133dfb5bf89da58aab460736c8d05f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerShooting
@@ -430,7 +430,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: b41377b0982561961eb56025ac21039d
+      Hash: 880a5a3ac7c2360e3ad80444115082aa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerHealth

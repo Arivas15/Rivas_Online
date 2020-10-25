@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Mirror;
 
-public class PlayerShooting : NetworkBehaviour
+public class PlayerShooting : MonoBehaviour
 {
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
@@ -53,7 +53,6 @@ public class PlayerShooting : NetworkBehaviour
         gunLight.enabled = false;
     }
 
-    [Command]
     void Shoot ()
     {
         timer = 0f;
