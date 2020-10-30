@@ -1343,15 +1343,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830089837}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b7d881b999e84dd9b2a355ed698e352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  playerMovement: {fileID: 114291914702536300, guid: 9e3e72cd89ef44f97afe08f9baaabc18,
-    type: 3}
   smoothing: 5
 --- !u!1 &1962775784
 GameObject:

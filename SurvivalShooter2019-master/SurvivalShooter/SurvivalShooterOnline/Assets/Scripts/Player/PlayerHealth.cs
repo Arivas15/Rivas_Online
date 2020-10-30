@@ -35,7 +35,7 @@ public class PlayerHealth : NetworkBehaviour
         playerShooting = GetComponentInChildren <PlayerShooting> ();
         currentHealth = startingHealth;
         damageImage = GameObject.Find("DamageImage").GetComponent<Image>();
-        healthSlider = GameObject.Find("Health Slider").GetComponent<Slider>();
+        healthSlider = GameObject.Find("HealthSlider").GetComponent<Slider>();
     }
 
 
